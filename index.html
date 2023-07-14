@@ -3,7 +3,7 @@
   <head>
     <title>Capacitación en R y herramientas de productividad</title>
     <meta charset="utf-8" />
-    <meta name="date" content="2023-07-13" />
+    <meta name="date" content="2023-07-14" />
     <script src="coordinacion_files/header-attrs-2.18/header-attrs.js"></script>
     <script src="coordinacion_files/clipboard-2.0.6/clipboard.min.js"></script>
     <link href="coordinacion_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
@@ -28,7 +28,7 @@ class: center, middle
 
 ## Capacitación en R y herramientas de productividad - nivel intermedio
 
-## Proyecto Ciencia de Datos para la Producción Estadística
+## Proyecto Ciencia de Datos
 
 ## Coordinación inicial monitores
 
@@ -69,6 +69,7 @@ background-position: 100% 0%
 --
 
 - Contexto de la actividad
+
   - Objetivo de aprendizaje
   - Organización de la capacitación
   
@@ -77,8 +78,8 @@ background-position: 100% 0%
 - Logística 
   - Grupos de monitores, Horarios, Salas
   - Tareas
-  - Repositorios por grupo
-
+  - Repositorios por grupo  
+  
 --
 
 - Revisión sesiones
@@ -90,6 +91,8 @@ background-position: 100% 0%
   - Sesión 4 data.table
   - Sesión 5 Manos a la obra: sesión práctica
   
+
+  
 ---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
@@ -97,7 +100,16 @@ background-position: 100% 0%
 
 # Contexto de la actividad
   
-  
+La actividad Capacitación en R y Herramientas de Productividad - nivel intermedio,
+se enmarca en la planificación del Proyecto Ciencia de
+Datos, el cual busca:
+
+*“Proveer a la Institución de metodologías, estándares, desarrollos y competencias que
+permitan automatizar, ordenar e innovar en la producción estadística y en áreas de
+soporte del negocio, generando conocimiento para fortalecer y hacer más eficiente la
+producción estadística de la Institución a través de estrategias de ciencia de datos e
+innovación en metodologías estadísticas”*.
+
 ---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
@@ -155,14 +167,6 @@ Haremos una pausa de **10 minutos** durante la sesión.
 
 --
 
-Si van surgiendo dudas, pueden consultar durante la clase levantando la mano ✋.
-
---
-
-Si tienen dudas que no apuntan directamente al contenido que se está revisando, podemos quedarnos unos minutos al término de la clase para resolverlas, o bien nos pueden consultar durante la semana.
-
---
-
 Compartiremos cada presentación antes al inicio de la sesión. Si existen correcciones detectadas, actualizaremos el repositorio durante la semana posterior.
 
 --
@@ -176,7 +180,7 @@ background-position: 100% 0%
 
 # Organización de la capacitación
 
-Los desafíos evaluados (sesión 2) y el trabajo final deben ser desarrollados **individualmente**.
+La tarea de la sesión 2 y el trabajo final deben ser desarrollados **individualmente**.
 
 --
 
@@ -189,7 +193,10 @@ El plazo para la entrega de estos desafíos es el **día antes de la siguente se
 --
 
 El objetivo de pedirles los scripts es permitirnos conocer sus avances, reforzar contenidos y retroalimentarlas/os de considerarse pertinente.
-🎥 Las clases serán grabadas para que puedan consultarlas en el futuro. **Se les solicitará consentimiento para realizar esta grabación antes de comenzar cada clase.**
+
+--
+
+Para el grupo *online* 🎥 Las clases serán grabadas para que puedan consultarlas en el futuro. **Se les solicitará consentimiento para realizar esta grabación antes de comenzar cada clase.**
 
 
 ---
@@ -215,7 +222,7 @@ Se permitirá justificar inasistencias por uso de permiso administrativo, feriad
 - Deben obtener una calificación mínima de 4 (en una escala de 1 a 7).
 - Debe ser realizada de **forma individual**.
 - También se evaluará el desafío de la sesión 2.
-- NF = Tarea_S2 * 0.2 + TF * (0.8)
+- `\(NF = Tarea2 * 0.2 + TF * 0.8\)`
 
 ---
 
@@ -246,8 +253,11 @@ background-position: 100% 0%
 # Requisitos básicos
 
 Estructuras condicionales (if, else, else if)
+
 Loops for y while
+
 Dominio sólido de dplyr
+
 Desarrollo de funciones
 
 --
@@ -277,7 +287,7 @@ background-position: 100% 0%
 
 **Grupo 1**:
     - ¿Quienes?: Iván Gutiérrez y Carlos Budnevich
-    - ¿Donde?: Online, teams
+    - ¿Donde?: Online, teams (¿Pueden grabar?)
     - ¿Cuando?: Horario a definir según prioridad de monitories, posterior consulta por doodle
     
 
@@ -294,7 +304,7 @@ background-position: 100% 0%
 
 **Grupo 2**: 
     - ¿Quienes?: Nicolás Godoy y Juan Gabriel Carrasco
-    - ¿Donde?: Presencial, Sala Piso 4 Morandé 
+    - ¿Donde?: Presencial, Sala Piso 20 Morandé 
     - ¿Cuando?:
     
  &lt;table&gt;
@@ -415,12 +425,41 @@ background-position: 100% 0%
  &lt;table&gt;
  &lt;thead&gt;
   &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; x &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Día &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Fechas &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Horario &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Pendiente &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 25-07-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 14:00-17:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 01-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 14:00-17:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 08-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 14:00-17:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Miércoles &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 16-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 22-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 14:00-17:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 29-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 14:00-17:00 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -434,7 +473,7 @@ background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Pendientes: 
+# Solicitudes: 
 
 --
 
@@ -444,7 +483,7 @@ background-position: 100% 0%
 
 --
 
-- Gestionar internet.
+- Gestionar internet = "Autogestionar el internet" 
 
 ---
 background-image: url("imagenes/fondo2.PNG")
@@ -453,6 +492,11 @@ background-position: 100% 0%
 
 # Tareas
 
+**Logística**
+
+Las tareas deberán ser entregadas a través de git. En el repositorio de github de cada grupo, se debe crear una rama llamada tareas después de la sesión 0, en la cual que exista una carpeta para cada clase. Lo que se espera es que los participantes hagan fetch (o pull) de esa rama y empujen sus tareas a la carpeta correspondiente. La estructura del archivo debe ser la siguiente: nombre_apellido1_apellido2.R
+
+**Repositorios:**
 
 - Grupo 1
 https://github.com/clase-git/clase-curso-online
@@ -466,84 +510,152 @@ https://github.com/clase-git/clase-curso-bulnes1
 - Grupo 4
 https://github.com/clase-git/clase-curso-bulnes2
 
+
+**Comunicación:**
+
+La comunicación con los participantes y sus monitores será por un grupo de teams.
+
+
+**Pendientes:**
+
+Les enviaremos las listas de los participantes
+
+Les enviaremos las soluciones de las tareas
+
+
+**Solicitudes:**
+
+Cuentas github de los monitores.
+
+Al recibir la lista de participantes, monitores deben solicitar cuentas de github de cada participante.
+
+
 ---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Contenidos 
+# Contenidos Sesión 0 - Coordinación
+
+--
+
+Se comienza con presentación inicial de coordinación (esta presentación sacando algunas cosas)
+
+--
+
+Presentación: https://clases-r-intermedio.github.io/Coordinacion/#1
+
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos Sesión 0
 
 - Sesión 0: Introducción a git y herramientas de trabajo reproducible
+
+Proyectos de R y rutas relativas
 
 ¿Qué es Git y para qué sirve?
 
 Principales conceptos asociados a Git
 
-Demostración de cómo funciona un repositorio colaborativo
+Esquema de trabajo en git
 
-Clonaremos un repositorio
+Conflictos de merge
 
-Trabajo con Rproject
+Árbol de commits
+
+Uso de ramas
+
+El .gitignore
+
+Recomendaciones sobre uso de git
+
+Clase: https://clases-r-intermedio.github.io/0_intro_git/#1
 
 ---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Contenidos 
+# Contenidos Sesión 1
 
 - Sesión 1: Tópicos avanzados de dplyr y funciones
 
 Operaciones rowwise
+
 “Loops” en dplyr: mutate_at y mutate + across
+
 Estructura de una función
+
 Ambientes
+
 Evaluación lazy
+
 Argumentos por defecto
+
 Abstracciones con funciones
+
 Funciones infix
+
+Clase: https://clases-r-intermedio.github.io/1_funciones/#1
 
 ---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Contenidos 
+# Contenidos Sesión 2
 
 - Sesión 2: Evaluaciones no estándar y programación funcional
 
 Conceptos sobre NSE (quoting y unquoting)
+
 Programación con dplyr
+
 Parsing
+
 Funcionales (map-reduce)
+
+Clase: https://clases-r-intermedio.github.io/2_programacion_funcional/#1
 
 ---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Contenidos 
+# Contenidos Sesión 3
 
 - Sesión 3: Expresiones regulares
 
 Expresiones regulares
-Paquetes para trabajar con expresiones regualres
+
+Paquetes para trabajar con expresiones regulares
+
 Programación funcional y expresiones regulares
+
+Clase: https://clases-r-intermedio.github.io/3_strings_regex/#1 
 
 ---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Contenidos 
+# Contenidos Sesión 4
 
 - Sesión 4: Manipulación de grandes volúmenes de datos con data.table
 
 ¿Por qué usar data.table?
+
 Importación y exportación con data.table
+
 Sintaxis básica de data.table
+
 Sintaxis avanzada de data.table
 
+Clase: https://clases-r-intermedio.github.io/4_data.table/#1
 
 ---
 
@@ -558,11 +670,10 @@ class: center, middle
 
 ## Capacitación en R y herramientas de productividad - nivel intermedio
 
-## Proyecto Estratégico Metodologías y Ciencia de Datos para la Producción Estadística
+## Proyecto Ciencia de Datos
 
-## Manipulación masiva de datos con el paquete `data.table`
+## Coordinación inicial monitores
 
-### Mayo 2023
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

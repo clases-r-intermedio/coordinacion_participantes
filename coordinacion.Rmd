@@ -328,11 +328,11 @@ horariogrupo3 <- data.frame(Día = c("Viernes","Viernes","Viernes","Viernes","Vi
                             Horario = c("10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00"))
 
 
-horariogrupo4 <- "Pendiente"
+# horariogrupo4 <- "Pendiente"
 
-# horariogrupo4 <- data.frame(Día = c("Martes","Martes","Martes","Miércoles","Martes","Martes"),
-#                             Fechas = c("25-07-2023","01-08-2023","08-08-2023","16-08-2023","22-08-2023","29-08-2023"),
-#                             Horario = c("10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00"))
+horariogrupo4 <- data.frame(Día = c("Martes","Martes","Martes","Miércoles","Martes","Martes"),
+                            Fechas = c("25-07-2023","01-08-2023","08-08-2023","16-08-2023","22-08-2023","29-08-2023"),
+                            Horario = c("14:00-17:00","14:00-17:00","14:00-17:00","10:00-13:00","14:00-17:00","14:00-17:00"))
 
 kableExtra::kable(horariogrupo2)
 
