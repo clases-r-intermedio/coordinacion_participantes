@@ -1,0 +1,512 @@
+---
+title: "Capacitación en R y herramientas de productividad"
+subtitle: "Sesión 5"  
+author: 
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    seal: false
+    #lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: False
+---
+
+class: center, middle
+
+.linea-superior[]
+.linea-inferior[]
+
+
+<img src="imagenes/logo_portada2.png" width="200" />
+
+
+## Capacitación en R y herramientas de productividad - nivel intermedio
+
+## Proyecto Ciencia de Datos para la Producción Estadística
+
+## Coordinación inicial monitores
+
+### Julio 2023
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = TRUE)
+knitr::opts_chunk$set(message = FALSE) 
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+library(xaringanExtra)
+
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+xaringanExtra::use_clipboard()
+xaringanExtra::use_panelset()
+
+#style_duo_accent(
+ # primary_color = "#1381B0",
+  #secondary_color = "#FF961C",
+  #inverse_header_color = "#FFFFFF"
+#)
+
+# referencias
+# https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html
+# https://bookdown.org/paradinas_iosu/CursoR/data-table.html
+# https://www.machinelearningplus.com/data-manipulation/datatable-in-r-complete-guide/
+# http://brooksandrew.github.io/simpleblog/articles/advanced-data-table/
+
+
+
+
+```
+
+---
+class: inverse, center, middle
+
+# Bienvenidos!!!
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Presentación
+
+<br>
+
+.center[<img src="imagenes/introduce.gif" width= "500"/>]
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos de la sesión
+
+--
+
+- Contexto de la actividad
+  - Objetivo de aprendizaje
+  - Organización de la capacitación
+  
+--
+
+- Revisión sesiones
+
+  - Sesión 0 Git
+  - Sesión 1 Funciones
+  - Sesión 2 Programación funcional
+  - Sesión 3 Regex
+  - Sesión 4 data.table
+  - Sesión 5 Manos a la obra: sesión práctica
+  
+--
+
+- Logística 
+  - Grupos de monitores, Horarios, Salas
+  - Tareas
+  - Repositorios por grupo
+  
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contexto de la actividad
+  
+  
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%  
+  
+# Objetivo de aprendizaje
+
+**Al finalizar la capacitación se espera que las/os participantes:**
+
+--
+
+Estén habilitadas/os para trabajar en un rol de desarrollador dentro de un proyecto Git
+
+--
+
+Conozcan herramientas para mejorar la reproducibilidad del trabajo con datos
+
+--
+
+Cuenten con herramientas para poner en práctica una modalidad de trabajo basada en programación funcional
+
+--
+
+Aprendan herramientas básicas para trabajar con datos de texto
+
+--
+
+Conozcan técnicas de programación basadas en evaluaciones no estándar (NSE)
+
+--
+
+Sean capaces de abordar de manera eficiente tareas iterativas
+
+--
+
+Conozcan herramientas básicas para trabajar con grandes volúmenes de datos en formato tabla  
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Organización de la capacitación
+
+La capacitación se compone de **6 sesiones de 3 horas** 
+
+--
+
+Las sesiones de realizarán **semanalmente**, en el día y hora convenidos.
+
+--
+
+Haremos una pausa de **10 minutos** durante la sesión.
+
+--
+
+Si van surgiendo dudas, pueden consultar durante la clase levantando la mano ✋.
+
+--
+
+Si tienen dudas que no apuntan directamente al contenido que se está revisando, podemos quedarnos unos minutos al término de la clase para resolverlas, o bien nos pueden consultar durante la semana.
+
+--
+
+Compartiremos cada presentación antes al inicio de la sesión. Si existen correcciones detectadas, actualizaremos el repositorio durante la semana posterior.
+
+--
+
+Al finalizar cada sesión se les presentará un desafío para resolver durante la semana. Estos desafíos no tienen impacto en la evaluación del curso, salvo el **desafío de la sesión 2, que tendrá una evaluación**.
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Organización de la capacitación
+
+Los desafíos evaluados (sesión 2) y el trabajo final deben ser desarrollados **individualmente**.
+
+--
+
+Para el resto de los desafíos pueden asociarse si lo desean.
+
+--
+
+El plazo para la entrega de estos desafíos es el **día antes de la siguente sesión de capacitación, a las 12:00 hrs**. En ese momento se subirá a nuestro canal en Teams la solución de los ejercicios.
+
+--
+
+El objetivo de pedirles los scripts es permitirnos conocer sus avances, reforzar contenidos y retroalimentarlas/os de considerarse pertinente.
+🎥 Las clases serán grabadas para que puedan consultarlas en el futuro. **Se les solicitará consentimiento para realizar esta grabación antes de comenzar cada clase.**
+
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Asistencia y evaluación del curso
+
+### Asistencia
+
+Se requerirá una asistencia **mínima de 80%**
+
+--
+
+Se permitirá justificar inasistencias por uso de permiso administrativo, feriado legal o por motivos laborales, lo cual deberá ser **informado por la jefatura del subdepartamento** al que la/el participante pertenece o **coordinación directa**, según corresponda
+
+--
+
+### Evaluación
+
+- Las/os participantes deberán realizar una **tarea final**
+- Deben obtener una calificación mínima de 4 (en una escala de 1 a 7).
+- Debe ser realizada de **forma individual**.
+- También se evaluará el desafío de la sesión 2.
+- NF = Tarea_S2 * 0.2 + TF * (0.8)
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos de la capacitación
+
+### Contenidos:
+Sesión 0: Introducción a git y herramientas de trabajo reproducible
+
+Sesión 1: Tópicos avanzados de dplyr y funciones
+
+Sesión 2: NSE y programación funcional
+
+Sesión 3: Expresiones regulares
+
+Sesión 4: Manipulación de grandes volúmenes de datos con data.table
+
+Sesión 5: Manos a la obra: sesión práctica
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Requisitos básicos
+
+Estructuras condicionales (if, else, else if)
+Loops for y while
+Dominio sólido de dplyr
+Desarrollo de funciones
+
+--
+
+```{r, eval=FALSE}
+
+contar_pares <- function(vector) {
+  contar = 0
+  for (i in vector) {
+    if (i %% 2 == 0) {
+          contar = contar + 1
+    } 
+  }
+  return(contar)
+}
+
+contar_pares(1:9)
+
+
+```
+  
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Grupos de monitores
+
+**Grupo 1**:
+    - ¿Quienes?: Iván Gutiérrez y Carlos Budnevich
+    - ¿Donde?: Online, teams
+    - ¿Cuando?: Horario a definir según prioridad de monitories, posterior consulta por doodle
+    
+
+
+```{r include=FALSE}
+
+horariogrupo2 <- data.frame(Día = c("Martes","Martes","Martes","Miércoles","Martes","Martes"),
+                            Fechas = c("25-07-2023","01-08-2023","08-08-2023","16-08-2023","22-08-2023","29-08-2023"),
+                            Horario = c("10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00"))
+
+horariogrupo3 <- data.frame(Día = c("Viernes","Viernes","Viernes","Viernes","Viernes","Viernes"),
+                            Fechas = c("28-07-2023","04-08-2023","11-08-2023","18-08-2023","25-08-2023","01-09-2023"),
+                            Horario = c("10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00"))
+
+
+horariogrupo4 <- "Pendiente"
+
+# horariogrupo4 <- data.frame(Día = c("Martes","Martes","Martes","Miércoles","Martes","Martes"),
+#                             Fechas = c("25-07-2023","01-08-2023","08-08-2023","16-08-2023","22-08-2023","29-08-2023"),
+#                             Horario = c("10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00","10:00-13:00"))
+
+kableExtra::kable(horariogrupo2)
+
+```
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Grupos de monitores
+
+**Grupo 2**: 
+    - ¿Quienes?: Nicolás Godoy y Juan Gabriel Carrasco
+    - ¿Donde?: Presencial, Sala Piso 4 Morandé 
+    - ¿Cuando?:
+    
+ `r  kableExtra::kable(horariogrupo2)`
+ 
+ 
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Grupos de monitores 
+
+**Grupo 3**: 
+    - ¿Quienes?: Ignacio Agloni y Klaus Lehmann
+    - ¿Donde?: Presencial, Sala Piso 4 Bulnes
+    - ¿Cuando?:
+    
+ `r  kableExtra::kable(horariogrupo3)`
+ 
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Grupos de monitores
+
+**Grupo 4**: 
+    - ¿Quienes?: Juan Eduardo Concha y Ricardo Pizarro
+    - ¿Donde?: Presencial, Sala Piso 4 Bulnes
+    - ¿Cuando?:
+  
+ `r  kableExtra::kable(horariogrupo4)`
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Pendientes: 
+
+--
+
+<br>
+
+- Probar las instalaciones, conexión de la pantalla al pc.
+
+--
+
+- Gestionar internet.
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Tareas
+
+
+- Grupo 1
+https://github.com/clase-git/clase-curso-online
+
+- Grupo 2
+https://github.com/clase-git/clase-curso-morande
+
+- Grupo 3
+https://github.com/clase-git/clase-curso-bulnes1
+
+- Grupo 4
+https://github.com/clase-git/clase-curso-bulnes2
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 0: Introducción a git y herramientas de trabajo reproducible
+
+¿Qué es Git y para qué sirve?
+
+Principales conceptos asociados a Git
+
+Demostración de cómo funciona un repositorio colaborativo
+
+Clonaremos un repositorio
+
+Trabajo con Rproject
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 1: Tópicos avanzados de dplyr y funciones
+
+Operaciones rowwise
+“Loops” en dplyr: mutate_at y mutate + across
+Estructura de una función
+Ambientes
+Evaluación lazy
+Argumentos por defecto
+Abstracciones con funciones
+Funciones infix
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 2: Evaluaciones no estándar y programación funcional
+
+Conceptos sobre NSE (quoting y unquoting)
+Programación con dplyr
+Parsing
+Funcionales (map-reduce)
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 3: Expresiones regulares
+
+Expresiones regulares
+Paquetes para trabajar con expresiones regualres
+Programación funcional y expresiones regulares
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 4: Manipulación de grandes volúmenes de datos con data.table
+
+¿Por qué usar data.table?
+Importación y exportación con data.table
+Sintaxis básica de data.table
+Sintaxis avanzada de data.table
+
+
+---
+
+class: center, middle
+
+.linea-superior[]
+.linea-inferior[]
+
+
+<img src="imagenes/logo_portada2.png" width="200" />
+
+
+## Capacitación en R y herramientas de productividad - nivel intermedio
+
+## Proyecto Estratégico Metodologías y Ciencia de Datos para la Producción Estadística
+
+## Manipulación masiva de datos con el paquete `data.table`
+
+### Mayo 2023

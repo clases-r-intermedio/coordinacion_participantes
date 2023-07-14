@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Capacitación en R y herramientas de productividad</title>
+    <meta charset="utf-8" />
+    <meta name="date" content="2023-07-13" />
+    <script src="coordinacion_files/header-attrs-2.18/header-attrs.js"></script>
+    <script src="coordinacion_files/clipboard-2.0.6/clipboard.min.js"></script>
+    <link href="coordinacion_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.css" rel="stylesheet" />
+    <script src="coordinacion_files/xaringanExtra-clipboard-0.2.6/xaringanExtra-clipboard.js"></script>
+    <script>window.xaringanExtraClipboard(null, {"button":"Copy Code","success":"Copied!","error":"Press Ctrl+C to Copy"})</script>
+    <link href="coordinacion_files/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="coordinacion_files/panelset-0.2.6/panelset.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+class: center, middle
+
+.linea-superior[]
+.linea-inferior[]
+
+
+&lt;img src="imagenes/logo_portada2.png" width="200" /&gt;
+
+
+## Capacitación en R y herramientas de productividad - nivel intermedio
+
+## Proyecto Ciencia de Datos para la Producción Estadística
+
+## Coordinación inicial monitores
+
+### Julio 2023
+
+
+
+
+
+
+
+
+---
+class: inverse, center, middle
+
+# Bienvenidos!!!
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Presentación
+
+&lt;br&gt;
+
+.center[&lt;img src="imagenes/introduce.gif" width= "500"/&gt;]
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos de la sesión
+
+--
+
+- Contexto de la actividad
+  - Objetivo de aprendizaje
+  - Organización de la capacitación
+  
+--
+
+- Logística 
+  - Grupos de monitores, Horarios, Salas
+  - Tareas
+  - Repositorios por grupo
+
+--
+
+- Revisión sesiones
+
+  - Sesión 0 Git
+  - Sesión 1 Funciones
+  - Sesión 2 Programación funcional
+  - Sesión 3 Regex
+  - Sesión 4 data.table
+  - Sesión 5 Manos a la obra: sesión práctica
+  
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contexto de la actividad
+  
+  
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%  
+  
+# Objetivo de aprendizaje
+
+**Al finalizar la capacitación se espera que las/os participantes:**
+
+--
+
+Estén habilitadas/os para trabajar en un rol de desarrollador dentro de un proyecto Git
+
+--
+
+Conozcan herramientas para mejorar la reproducibilidad del trabajo con datos
+
+--
+
+Cuenten con herramientas para poner en práctica una modalidad de trabajo basada en programación funcional
+
+--
+
+Aprendan herramientas básicas para trabajar con datos de texto
+
+--
+
+Conozcan técnicas de programación basadas en evaluaciones no estándar (NSE)
+
+--
+
+Sean capaces de abordar de manera eficiente tareas iterativas
+
+--
+
+Conozcan herramientas básicas para trabajar con grandes volúmenes de datos en formato tabla  
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Organización de la capacitación
+
+La capacitación se compone de **6 sesiones de 3 horas** 
+
+--
+
+Las sesiones de realizarán **semanalmente**, en el día y hora convenidos.
+
+--
+
+Haremos una pausa de **10 minutos** durante la sesión.
+
+--
+
+Si van surgiendo dudas, pueden consultar durante la clase levantando la mano ✋.
+
+--
+
+Si tienen dudas que no apuntan directamente al contenido que se está revisando, podemos quedarnos unos minutos al término de la clase para resolverlas, o bien nos pueden consultar durante la semana.
+
+--
+
+Compartiremos cada presentación antes al inicio de la sesión. Si existen correcciones detectadas, actualizaremos el repositorio durante la semana posterior.
+
+--
+
+Al finalizar cada sesión se les presentará un desafío para resolver durante la semana. Estos desafíos no tienen impacto en la evaluación del curso, salvo el **desafío de la sesión 2, que tendrá una evaluación**.
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Organización de la capacitación
+
+Los desafíos evaluados (sesión 2) y el trabajo final deben ser desarrollados **individualmente**.
+
+--
+
+Para el resto de los desafíos pueden asociarse si lo desean.
+
+--
+
+El plazo para la entrega de estos desafíos es el **día antes de la siguente sesión de capacitación, a las 12:00 hrs**. En ese momento se subirá a nuestro canal en Teams la solución de los ejercicios.
+
+--
+
+El objetivo de pedirles los scripts es permitirnos conocer sus avances, reforzar contenidos y retroalimentarlas/os de considerarse pertinente.
+🎥 Las clases serán grabadas para que puedan consultarlas en el futuro. **Se les solicitará consentimiento para realizar esta grabación antes de comenzar cada clase.**
+
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Asistencia y evaluación del curso
+
+### Asistencia
+
+Se requerirá una asistencia **mínima de 80%**
+
+--
+
+Se permitirá justificar inasistencias por uso de permiso administrativo, feriado legal o por motivos laborales, lo cual deberá ser **informado por la jefatura del subdepartamento** al que la/el participante pertenece o **coordinación directa**, según corresponda
+
+--
+
+### Evaluación
+
+- Las/os participantes deberán realizar una **tarea final**
+- Deben obtener una calificación mínima de 4 (en una escala de 1 a 7).
+- Debe ser realizada de **forma individual**.
+- También se evaluará el desafío de la sesión 2.
+- NF = Tarea_S2 * 0.2 + TF * (0.8)
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos de la capacitación
+
+### Contenidos:
+Sesión 0: Introducción a git y herramientas de trabajo reproducible
+
+Sesión 1: Tópicos avanzados de dplyr y funciones
+
+Sesión 2: NSE y programación funcional
+
+Sesión 3: Expresiones regulares
+
+Sesión 4: Manipulación de grandes volúmenes de datos con data.table
+
+Sesión 5: Manos a la obra: sesión práctica
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Requisitos básicos
+
+Estructuras condicionales (if, else, else if)
+Loops for y while
+Dominio sólido de dplyr
+Desarrollo de funciones
+
+--
+
+
+```r
+contar_pares &lt;- function(vector) {
+  contar = 0
+  for (i in vector) {
+    if (i %% 2 == 0) {
+          contar = contar + 1
+    } 
+  }
+  return(contar)
+}
+
+contar_pares(1:9)
+```
+  
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Grupos de monitores
+
+**Grupo 1**:
+    - ¿Quienes?: Iván Gutiérrez y Carlos Budnevich
+    - ¿Donde?: Online, teams
+    - ¿Cuando?: Horario a definir según prioridad de monitories, posterior consulta por doodle
+    
+
+
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Grupos de monitores
+
+**Grupo 2**: 
+    - ¿Quienes?: Nicolás Godoy y Juan Gabriel Carrasco
+    - ¿Donde?: Presencial, Sala Piso 4 Morandé 
+    - ¿Cuando?:
+    
+ &lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Día &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Fechas &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Horario &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 25-07-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 01-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 08-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Miércoles &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 16-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 22-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Martes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 29-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+ 
+ 
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Grupos de monitores 
+
+**Grupo 3**: 
+    - ¿Quienes?: Ignacio Agloni y Klaus Lehmann
+    - ¿Donde?: Presencial, Sala Piso 4 Bulnes
+    - ¿Cuando?:
+    
+ &lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Día &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Fechas &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Horario &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Viernes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 28-07-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Viernes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 04-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Viernes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 11-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Viernes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 18-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Viernes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 25-08-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Viernes &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 01-09-2023 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 10:00-13:00 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+ 
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Grupos de monitores
+
+**Grupo 4**: 
+    - ¿Quienes?: Juan Eduardo Concha y Ricardo Pizarro
+    - ¿Donde?: Presencial, Sala Piso 4 Bulnes
+    - ¿Cuando?:
+  
+ &lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; x &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Pendiente &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+
+---
+
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Pendientes: 
+
+--
+
+&lt;br&gt;
+
+- Probar las instalaciones, conexión de la pantalla al pc.
+
+--
+
+- Gestionar internet.
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Tareas
+
+
+- Grupo 1
+https://github.com/clase-git/clase-curso-online
+
+- Grupo 2
+https://github.com/clase-git/clase-curso-morande
+
+- Grupo 3
+https://github.com/clase-git/clase-curso-bulnes1
+
+- Grupo 4
+https://github.com/clase-git/clase-curso-bulnes2
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 0: Introducción a git y herramientas de trabajo reproducible
+
+¿Qué es Git y para qué sirve?
+
+Principales conceptos asociados a Git
+
+Demostración de cómo funciona un repositorio colaborativo
+
+Clonaremos un repositorio
+
+Trabajo con Rproject
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 1: Tópicos avanzados de dplyr y funciones
+
+Operaciones rowwise
+“Loops” en dplyr: mutate_at y mutate + across
+Estructura de una función
+Ambientes
+Evaluación lazy
+Argumentos por defecto
+Abstracciones con funciones
+Funciones infix
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 2: Evaluaciones no estándar y programación funcional
+
+Conceptos sobre NSE (quoting y unquoting)
+Programación con dplyr
+Parsing
+Funcionales (map-reduce)
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 3: Expresiones regulares
+
+Expresiones regulares
+Paquetes para trabajar con expresiones regualres
+Programación funcional y expresiones regulares
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos 
+
+- Sesión 4: Manipulación de grandes volúmenes de datos con data.table
+
+¿Por qué usar data.table?
+Importación y exportación con data.table
+Sintaxis básica de data.table
+Sintaxis avanzada de data.table
+
+
+---
+
+class: center, middle
+
+.linea-superior[]
+.linea-inferior[]
+
+
+&lt;img src="imagenes/logo_portada2.png" width="200" /&gt;
+
+
+## Capacitación en R y herramientas de productividad - nivel intermedio
+
+## Proyecto Estratégico Metodologías y Ciencia de Datos para la Producción Estadística
+
+## Manipulación masiva de datos con el paquete `data.table`
+
+### Mayo 2023
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
