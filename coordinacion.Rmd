@@ -448,6 +448,21 @@ Cuentas github de los monitores.
 Al recibir la lista de participantes, monitores deben solicitar cuentas de github de cada participante.
 
 
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Contenidos Sesión 0 - Coordinación
+
+--
+
+Se comienza con presentación inicial de coordinación (esta presentación sacando algunas cosas)
+
+--
+
+Presentación: https://clases-r-intermedio.github.io/Coordinacion/#1
+
 
 ---
 background-image: url("imagenes/fondo2.PNG")
@@ -457,7 +472,6 @@ background-position: 100% 0%
 # Contenidos Sesión 0
 
 - Sesión 0: Introducción a git y herramientas de trabajo reproducible
-
 
 Proyectos de R y rutas relativas
 
