@@ -27,7 +27,7 @@ class: center, middle
 
 ## Proyecto Ciencia de Datos
 
-## Coordinación inicial monitores
+## Coordinación inicial Participantes
 
 ### Julio 2023
 
@@ -241,32 +241,13 @@ Se permitirá justificar inasistencias por uso de permiso administrativo, feriad
 
 ### Evaluación
 
-- Las/os participantes deberán realizar una **tarea final**
-- Deben obtener una calificación mínima de 4 (en una escala de 1 a 7).
-- Debe ser realizada de **forma individual**.
-- También se evaluará el desafío de la sesión 2.
-- $NF = Tarea2 * 0.2 + TF * 0.8$
+Para aprobar el curso se deben cumplir con los siguientes requisitos: 
+1. Entregar la tarea de la sesión 2 (programación funcional) 
+1. Entregar trabajo final 
+1. Cumplir con unas asistencia del 80%
 
----
+El no cumplimiento de cualquiera de estos requisitos implicará reprobación del curso
 
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Contenidos de la capacitación
-
-### Contenidos:
-Sesión 0: Introducción a git y herramientas de trabajo reproducible
-
-Sesión 1: Tópicos avanzados de dplyr y funciones
-
-Sesión 2: NSE y programación funcional
-
-Sesión 3: Expresiones regulares
-
-Sesión 4: Manipulación de grandes volúmenes de datos con data.table
-
-Sesión 5: Manos a la obra: sesión práctica
 
 ---
 background-image: url("imagenes/fondo2.PNG")
@@ -311,9 +292,9 @@ background-position: 100% 0%
 # Grupos de monitores
 
 **Grupo 1**:
-    - ¿Quienes?: Iván Gutiérrez y Carlos Budnevich
-    - ¿Donde?: Online, teams (¿Pueden grabar?)
-    - ¿Cuando?: Horario a definir según prioridad de monitories, posterior consulta por doodle
+    - Monitores: Iván Gutiérrez y Carlos Budnevich
+    - Donde: Online, teams (¿Pueden grabar?)
+    - Cuando: Horario a definir según prioridad de monitories, posterior consulta por doodle
     
 
 
@@ -334,8 +315,6 @@ horariogrupo4 <- data.frame(Día = c("Martes","Martes","Martes","Miércoles","Ma
                             Fechas = c("25-07-2023","01-08-2023","08-08-2023","16-08-2023","22-08-2023","29-08-2023"),
                             Horario = c("14:00-17:00","14:00-17:00","14:00-17:00","10:00-13:00","14:00-17:00","14:00-17:00"))
 
-kableExtra::kable(horariogrupo2)
-
 ```
 
 ---
@@ -347,9 +326,9 @@ background-position: 100% 0%
 # Grupos de monitores
 
 **Grupo 2**: 
-    - ¿Quienes?: Nicolás Godoy y Juan Gabriel Carrasco
-    - ¿Donde?: Presencial, Sala Piso 20 Morandé 
-    - ¿Cuando?:
+    - Monitores: Nicolás Godoy y Juan Gabriel Carrasco
+    - Donde: Presencial, Sala Piso 20 Morandé 
+    - Cuando:
     
  `r  kableExtra::kable(horariogrupo2)`
  
@@ -363,9 +342,9 @@ background-position: 100% 0%
 # Grupos de monitores 
 
 **Grupo 3**: 
-    - ¿Quienes?: Ignacio Agloni y Klaus Lehmann
-    - ¿Donde?: Presencial, Sala Piso 4 Bulnes
-    - ¿Cuando?:
+    - Monitores: Ignacio Agloni y Klaus Lehmann
+    - Donde: Presencial, Sala Piso 4 Bulnes
+    - Cuando:
     
  `r  kableExtra::kable(horariogrupo3)`
  
@@ -378,30 +357,11 @@ background-position: 100% 0%
 # Grupos de monitores
 
 **Grupo 4**: 
-    - ¿Quienes?: Juan Eduardo Concha y Ricardo Pizarro
-    - ¿Donde?: Presencial, Sala Piso 4 Bulnes
-    - ¿Cuando?:
+    - Monitores: Juan Eduardo Concha y Ricardo Pizarro
+    - Donde: Presencial, Sala Piso 4 Bulnes
+    - Cuando:
   
  `r  kableExtra::kable(horariogrupo4)`
-
-
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Solicitudes: 
-
---
-
-<br>
-
-- Probar las instalaciones, conexión de la pantalla al pc.
-
---
-
-- Gestionar internet = "Autogestionar el internet" 
 
 ---
 background-image: url("imagenes/fondo2.PNG")
@@ -433,35 +393,33 @@ https://github.com/clase-git/clase-curso-bulnes2
 
 La comunicación con los participantes y sus monitores será por un grupo de teams.
 
+**Solicitudes a participantes:**
 
-**Pendientes:**
+Cuentas github
 
-Les enviaremos las listas de los participantes
-
-Les enviaremos las soluciones de las tareas
-
-
-**Solicitudes:**
-
-Cuentas github de los monitores.
-
-Al recibir la lista de participantes, monitores deben solicitar cuentas de github de cada participante.
+Posibilidad de internet = ¿Podemos compartir nuestra señal? 
 
 
 ---
+
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Contenidos Sesión 0 - Coordinación
+# Contenidos de la capacitación
 
---
+### Contenidos:
+Sesión 0: Introducción a git y herramientas de trabajo reproducible
 
-Se comienza con presentación inicial de coordinación (esta presentación sacando algunas cosas)
+Sesión 1: Tópicos avanzados de dplyr y funciones
 
---
+Sesión 2: NSE y programación funcional
 
-Presentación: https://clases-r-intermedio.github.io/Coordinacion/#1
+Sesión 3: Expresiones regulares
+
+Sesión 4: Manipulación de grandes volúmenes de datos con data.table
+
+Sesión 5: Manos a la obra: sesión práctica
 
 
 ---
