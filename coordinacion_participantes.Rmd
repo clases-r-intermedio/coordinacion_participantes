@@ -192,9 +192,6 @@ Haremos una pausa de **10 minutos** durante la sesión.
 
 Compartiremos cada presentación antes al inicio de la sesión. Si existen correcciones detectadas, actualizaremos el repositorio durante la semana posterior.
 
---
-
-Al finalizar cada sesión se les presentará un desafío para resolver durante la semana. Estos desafíos no tienen impacto en la evaluación del curso, salvo el **desafío de la sesión 2, que tendrá una evaluación**.
 
 ---
 background-image: url("imagenes/fondo2.PNG")
@@ -372,8 +369,8 @@ background-position: 100% 0%
 
 **Logística**
 
-Las tareas deberán ser entregadas a través de git. En el repositorio de github de cada grupo, se debe crear una rama llamada tareas después de la sesión 0, en la cual que exista una carpeta para cada clase. Lo que se espera es que los participantes hagan fetch (o pull) de esa rama y empujen sus tareas a la carpeta correspondiente. La estructura del archivo debe ser la siguiente: nombre_apellido1_apellido2.R
-
+Las tareas deberán ser entregadas a través de git. En el repositorio de github de cada grupo, existirá una rama llamada tareas con una carpeta para cada clase. Lo que se espera es que los participantes hagan fetch (o pull) de esa rama y empujen sus tareas a la carpeta correspondiente. La estructura del nombre del archivo debe ser la siguiente: nombre_apellido1_apellido2.R
+,
 **Repositorios:**
 
 - Grupo 1
@@ -395,9 +392,11 @@ La comunicación con los participantes y sus monitores será por un grupo de tea
 
 **Solicitudes a participantes:**
 
+Uso de computador personal
+
 Cuentas github
 
-Posibilidad de internet = ¿Podemos compartir nuestra señal? 
+Uso de internet compartido entre los participantes (la red del ine nos pone muchas limitaciones)
 
 
 ---
@@ -420,118 +419,6 @@ Sesión 3: Expresiones regulares
 Sesión 4: Manipulación de grandes volúmenes de datos con data.table
 
 Sesión 5: Manos a la obra: sesión práctica
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Contenidos Sesión 0
-
-- Sesión 0: Introducción a git y herramientas de trabajo reproducible
-
-Proyectos de R y rutas relativas
-
-¿Qué es Git y para qué sirve?
-
-Principales conceptos asociados a Git
-
-Esquema de trabajo en git
-
-Conflictos de merge
-
-Árbol de commits
-
-Uso de ramas
-
-El .gitignore
-
-Recomendaciones sobre uso de git
-
-Clase: https://clases-r-intermedio.github.io/0_intro_git/#1
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Contenidos Sesión 1
-
-- Sesión 1: Tópicos avanzados de dplyr y funciones
-
-Operaciones rowwise
-
-“Loops” en dplyr: mutate_at y mutate + across
-
-Estructura de una función
-
-Ambientes
-
-Evaluación lazy
-
-Argumentos por defecto
-
-Abstracciones con funciones
-
-Funciones infix
-
-Clase: https://clases-r-intermedio.github.io/1_funciones/#1
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Contenidos Sesión 2
-
-- Sesión 2: Evaluaciones no estándar y programación funcional
-
-Conceptos sobre NSE (quoting y unquoting)
-
-Programación con dplyr
-
-Parsing
-
-Funcionales (map-reduce)
-
-Clase: https://clases-r-intermedio.github.io/2_programacion_funcional/#1
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Contenidos Sesión 3
-
-- Sesión 3: Expresiones regulares
-
-Expresiones regulares
-
-Paquetes para trabajar con expresiones regulares
-
-Programación funcional y expresiones regulares
-
-Clase: https://clases-r-intermedio.github.io/3_strings_regex/#1 
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Contenidos Sesión 4
-
-- Sesión 4: Manipulación de grandes volúmenes de datos con data.table
-
-¿Por qué usar data.table?
-
-Importación y exportación con data.table
-
-Sintaxis básica de data.table
-
-Sintaxis avanzada de data.table
-
-Clase: https://clases-r-intermedio.github.io/4_data.table/#1
 
 ---
 
