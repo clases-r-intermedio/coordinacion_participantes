@@ -98,21 +98,20 @@ background-position: 100% 0%
   
 --
 
-- Logística 
-  - Grupos de monitores, Horarios, Salas
-  - Tareas
-  - Repositorios por grupo  
+- Organización
+
+- Asistencia y evaluación del curso
+
+- Requisitos básicos
+
+- Grupos, fechas, Horarios y Salas
+
+- Tareas
+
+- Repositorios por grupo  
   
---
+- Contenido de sesiones
 
-- Revisión sesiones
-
-  - Sesión 0 Git
-  - Sesión 1 Funciones
-  - Sesión 2 Programación funcional
-  - Sesión 3 Regex
-  - Sesión 4 data.table
-  - Sesión 5 Manos a la obra: sesión práctica
   
 
   
@@ -286,9 +285,8 @@ background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Grupos de monitores
-
-**Grupo 1**:
+# Grupos
+**Grupo Regiones Online**:
     - Monitores: Iván Gutiérrez y Carlos Budnevich
     - Donde: Online, teams (¿Pueden grabar?)
     - Cuando: Horario a definir según prioridad de monitories, posterior consulta por doodle
@@ -320,9 +318,8 @@ background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Grupos de monitores
-
-**Grupo 2**: 
+# Grupos
+**Grupo Morandé**: 
     - Monitores: Nicolás Godoy y Juan Gabriel Carrasco
     - Donde: Presencial, Sala Piso 20 Morandé 
     - Cuando:
@@ -336,9 +333,9 @@ background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Grupos de monitores 
+# Grupos
 
-**Grupo 3**: 
+**Grupo Bulnes 1**: 
     - Monitores: Ignacio Agloni y Klaus Lehmann
     - Donde: Presencial, Sala Piso 4 Bulnes
     - Cuando:
@@ -351,9 +348,8 @@ background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Grupos de monitores
-
-**Grupo 4**: 
+# Grupos
+**Grupo Bulnes 2**: 
     - Monitores: Juan Eduardo Concha y Ricardo Pizarro
     - Donde: Presencial, Sala Piso 4 Bulnes
     - Cuando:
@@ -405,7 +401,7 @@ background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# Contenidos de la capacitación
+# Contenidos de las sesiones
 
 ### Contenidos:
 Sesión 0: Introducción a git y herramientas de trabajo reproducible
